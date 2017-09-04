@@ -10,4 +10,6 @@ After introducing private networks in exoscale, here is a short example how to c
 * Create a cloudstack.ini file to setup cloudstack api.
 
 ## Run this example
-After successful setup you just need to run following command to start
+After successful setup your playbook, you just need to run following command to start the deployment
+
+     ansible-playbook ./install-vpn-gateway.yml

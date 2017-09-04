@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  connection: local
+  vars:
+    ssh_key: vpn-gateway-deployment-node
+  roles:
+    - cloud-setup
