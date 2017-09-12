@@ -14,13 +14,6 @@ instances:
     instance_type: Tiny
     root_disk_size: 10
     zone: ch-gva-2
-  - name: vpn-gateway-web-node03
-    security_groups: [ "vpn-gateway-default", "vpn-gateway-web" ]
-    template: Linux Ubuntu 16.04 LTS 64-bit
-    template_filter: featured
-    instance_type: Tiny
-    root_disk_size: 10
-    zone: ch-gva-2
   - name: vpn-gateway-ipsec
     security_groups: [ "vpn-gateway-default", "vpn-gateway-ipsec" ]
     template: OpenBSD 6.1
