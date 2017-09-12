@@ -13,3 +13,12 @@ After introducing private networks in exoscale, here is a short example how to c
 After successful setup your playbook, you just need to run following command to start the deployment
 
      ansible-playbook ./install-vpn-gateway.yml
+
+## Configuration
+
+This example currently supports a lot of different configuration possibilities. The configuration is inside following files:
+* instances.yml
+* security-groups.yml
+* security-group-rules.yml
+
+In theses files you could change the number of instances you want to create or modify the security-groups as well as their rules.

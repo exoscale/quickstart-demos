@@ -1,0 +1,8 @@
+- name: Add security Group Rules
+  local_action:
+      module: cs_securitygroup_rule
+      protocol: "{{ item.protocol }}"
+      security_group: "{{ item.name }}"
+      start_port: "{{ item.port }}"
+      end_port: "{{ item.port | default(omit) }}"
+  with_items: '{{ security_group_rules }}'

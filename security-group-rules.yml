@@ -1,0 +1,20 @@
+---
+security_group_rules:
+  - name: vpn-gateway-default
+    protocol: tcp
+    port: 22
+  - name: vpn-gateway-ipsec
+    protocol: udp
+    port: 500
+  - name: vpn-gateway-ipsec
+    protocol: udp
+    port: 4500
+  - name: vpn-gateway-ipsec
+    protocol: esp
+    port: 0
+  - name: vpn-gateway-web
+    protocol: tcp
+    port: 80
+  - name: vpn-gateway-web
+    protocol: tcp
+    port: 443

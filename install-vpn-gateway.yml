@@ -3,5 +3,10 @@
   connection: local
   vars:
     ssh_key: vpn-gateway-deployment-node
+  vars_files:
+    - ./security-groups.yml
+    - ./security-group-rules.yml
+    - ./instances.yml
   roles:
     - cloud-setup
+    - create-cloud-infrastructure

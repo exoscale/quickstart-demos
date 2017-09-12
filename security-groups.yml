@@ -1,0 +1,5 @@
+---
+security_groups:
+  - name: vpn-gateway-default
+  - name: vpn-gateway-ipsec
+  - name: vpn-gateway-web
