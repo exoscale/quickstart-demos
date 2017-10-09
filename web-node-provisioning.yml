@@ -1,0 +1,4 @@
+---
+- hosts: [web_nodes]
+  roles:
+    - web-node-provisioning

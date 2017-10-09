@@ -5,4 +5,9 @@
 159.100.243.50
 
 [gateway_node]
-159.100.242.114
+159.100.240.159
+
+[web_nodes:vars]
+ansible_user=root
+ansible_ssh_private_key_file=~/.ssh/id_rsa_vpn-gateway-deployment-node
+ansible_python_interpreter=/usr/bin/python3
