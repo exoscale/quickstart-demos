@@ -1,0 +1,4 @@
+---
+- hosts: [gateway_node]
+  roles:
+    - gateway-provisioning

@@ -1,0 +1,4 @@
+- hosts: [gateway_node]
+  gather_facts: no
+  roles:
+    - ansible-setup-gateway

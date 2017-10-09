@@ -1,0 +1,3 @@
+---
+  - include: configure-private-network.yml
+  - include: enable-services.yml

@@ -1,0 +1,5 @@
+- name: Enable ipsec, isakmpd, npppd
+  command: rcctl enable ipsec isakmpd npppd
+
+- name: set isakmpd flags
+  command: rcctl set isakmpd flags -K

@@ -1,0 +1,2 @@
+- name: Setup for Ansible - Install Python 3.6
+  raw: pkg_add https://ftp.openbsd.org/pub/OpenBSD/6.1/packages/amd64/python-3.6.0p0.tgz

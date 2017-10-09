@@ -1,0 +1,12 @@
+- name: Configure system controls
+  template: src=sysctl.conf dest=/etc/sysctl.conf
+  tags: sysctl
+- name: Configure L2TP - Credentials file npppd-users
+  template: src=npppd-users dest=/etc/npppd/npppd-users
+  tags: sysctl
+- name: Configure IPsec
+  template: src=ipsec.conf dest=/etc/ipsec.conf mode=0600
+  tags: sysctl
+- name: Configure NAT
+  template: src=pf.conf dest=/etc/pf.conf
+  tags: sysctl
