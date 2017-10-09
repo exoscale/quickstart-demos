@@ -7,6 +7,7 @@
     - ./security-groups.yml
     - ./security-group-rules.yml
     - ./instances.yml
+    - ./gateway.yml
   roles:
     - cloud-setup
     - create-cloud-infrastructure

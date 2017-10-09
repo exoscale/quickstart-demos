@@ -1,19 +1,11 @@
 [default]
-{% for item in nginx_nodes.results %}
+
+[web_nodes]
+{% for item in web_nodes.results %}
 {{ item.default_ip }}
 {% endfor %}
 
-
-
-
-
-[default]
-
-[nginx_node]
-{% for item in nginx_nodes.results %}
+[gateway_node]
+{% for item in gateway_node.results %}
 {{ item.default_ip }}
 {% endfor %}
-
-[nginx_nodes:vars]
-ansible_ssh_private_key_file=~/.ssh/id_rsa_{{ ssh_key }}
-ansible_python_interpreter=/usr/bin/python3

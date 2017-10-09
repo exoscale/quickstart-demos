@@ -1,4 +1,17 @@
-- name: Create instances
+- name: Create Gateway Instance
+  local_action:
+    module: cs_instance
+    display_name: "{{ item.name }}"
+    template: "{{ item.template }}"
+    service_offering: "{{ item.instance_type }}"
+    ssh_key: "vpn-gateway-deployment-node"
+    security_groups: '{{ item.security_groups }}'
+    root_disk_size: '{{ item.root_disk_size }}'
+    zone: "{{ item.zone }}"
+  with_items: '{{ gateway }}'
+  register: gateway_node
+
+- name: Create Web Nodes Instances
   local_action:
     module: cs_instance
     display_name: "{{ item.name }}"
@@ -9,3 +22,4 @@
     root_disk_size: '{{ item.root_disk_size }}'
     zone: "{{ item.zone }}"
   with_items: '{{ instances }}'
+  register: web_nodes

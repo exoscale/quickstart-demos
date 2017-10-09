@@ -2,3 +2,4 @@
   - include: create-security-group.yml
   - include: add-security-group-rules.yml
   - include: create-instances.yml
+  - include: create-inventory-file.yml

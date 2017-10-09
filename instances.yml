@@ -14,10 +14,3 @@ instances:
     instance_type: Tiny
     root_disk_size: 10
     zone: ch-gva-2
-  - name: vpn-gateway-ipsec
-    security_groups: [ "vpn-gateway-default", "vpn-gateway-ipsec" ]
-    template: OpenBSD 6.1
-    template_filter: featured
-    instance_type: Tiny
-    root_disk_size: 50
-    zone: ch-gva-2
