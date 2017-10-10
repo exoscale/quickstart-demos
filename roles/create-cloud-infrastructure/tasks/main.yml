@@ -3,3 +3,4 @@
   - include: add-security-group-rules.yml
   - include: create-instances.yml
   - include: create-inventory-file.yml
+  - include: enable-private-network.yml

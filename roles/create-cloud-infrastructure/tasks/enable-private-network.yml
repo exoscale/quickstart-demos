@@ -1,0 +1,14 @@
+- name: Enable private network for web nodes
+  local_action:
+    module: cs_instance_nic
+    network: privNetForBasicZone
+    vm: "{{ item.name }}"
+    zone: "{{ item.zone }}"
+  with_items: '{{ instances }}'
+- name: Enable private network for gateway
+  local_action:
+    module: cs_instance_nic
+    network: privNetForBasicZone
+    vm: "{{ item.name }}"
+    zone: "{{ item.zone }}"
+  with_items: '{{ gateway }}'

@@ -10,3 +10,6 @@
 - name: Configure NAT
   template: src=pf.conf dest=/etc/pf.conf
   tags: sysctl
+- name: Configure Private Network Interface on IPSec
+  template: src=hostname.vio1 dest=/etc/hostname.vio1
+  tags: sysctl

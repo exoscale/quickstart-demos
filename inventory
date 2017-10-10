@@ -1,11 +1,11 @@
 [default]
 
 [web_nodes]
-159.100.240.233
-159.100.243.50
+185.19.31.116
+159.100.241.68
 
 [gateway_node]
-159.100.241.124
+159.100.240.179
 
 [web_nodes:vars]
 ansible_user=root
