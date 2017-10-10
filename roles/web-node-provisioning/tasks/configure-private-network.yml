@@ -1,3 +1,5 @@
 - name: Configure Private Network
   template: src=privnet.cfg dest=/etc/network/interfaces.d/01-privnet.cfg
   tags: privnet
+- name: Start Network Interface
+  command: ifup ens7

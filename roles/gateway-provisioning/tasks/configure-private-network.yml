@@ -13,3 +13,10 @@
 - name: Configure Private Network Interface on IPSec
   template: src=hostname.vio1 dest=/etc/hostname.vio1
   tags: sysctl
+- name: Start Network Interface
+  command: sh /etc/netstart vio1
+- name: Restart server
+  command: reboot
+  async: 0
+  poll: 0
+  ignore_errors: true
