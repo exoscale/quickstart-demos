@@ -15,8 +15,3 @@
   tags: sysctl
 - name: Start Network Interface
   command: sh /etc/netstart vio1
-- name: Restart server
-  command: reboot
-  async: 0
-  poll: 0
-  ignore_errors: true

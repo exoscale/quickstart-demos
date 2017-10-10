@@ -4,7 +4,7 @@ After introducing private networks in exoscale, here is a short example how to c
 
 ## Setup this Playbook
 
-* Install ansible
+* Install ansible (2.4 or later is required)
 * Exoscale Account (for using the api key and the security key)
 * Install [cloudstack api](https://github.com/exoscale/cs)
 * Create a cloudstack.ini file to setup cloudstack api.
