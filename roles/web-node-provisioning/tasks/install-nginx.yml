@@ -1,2 +1,4 @@
 - name: Install nginx on web-nodes
   apt: name=nginx state=latest update_cache=true
+- name: Add content to webpage
+  template: src=index.html dest=/var/www/html/index.nginx-debian.html
