@@ -21,6 +21,7 @@ After successful setup your playbook, you just need to run following command to 
 
 This example currently supports a lot of different configuration possibilities. The configuration is inside following files:
 * instances.yml
+* gateway.yml
 * security-groups.yml
 * security-group-rules.yml
 
