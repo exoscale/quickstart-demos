@@ -1,6 +1,6 @@
 # Exoscale VPN Gateway - Ansible Playbook Example
 
-After introducing private networks in exoscale, here is a short example how to create an VPN Gateway in exoscale cloud using Ansible. This implementation is based on the example written by Pierre-Yves Riʦchard‏ (https://www.exoscale.com/syslog/2017/06/26/building-an-ipsec-gateway-with-openbsd/)
+After introducing private networks in exoscale, here is a short example how to create an VPN Gateway in exoscale cloud using Ansible. This implementation is based on the example written by Pierre-Yves Riʦchard‏ (https://www.exoscale.com/syslog/building-an-ipsec-gateway-with-openbsd/)
 
 ## Setup this Playbook
 
